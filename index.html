@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AC</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Alex Chen</span></h1>
+                <p class="hero-subtitle">Full Stack Developer | UI/UX Enthusiast | Problem Solver</p>
+                <p class="hero-description">I create beautiful, functional web experiences that solve real-world problems. Let's build something amazing together.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-circle"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With 5+ years of experience in web development, I've helped startups and established companies build digital solutions that users love.</p>
+                    <p>My passion lies in creating seamless user experiences combined with robust backend architecture. I believe great design and clean code go hand in hand.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce solution with real-time inventory management and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management tool with real-time updates and team collaboration features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization dashboard with interactive charts and automated reporting.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Social Network MVP</h3>
+                        <p>Minimum viable product for a social networking platform with real-time messaging.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>AI Content Generator</h3>
+                        <p>AI-powered tool for generating marketing copy and social media content with customization options.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Express</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Fitness Tracking App</h3>
+                        <p>Mobile-first fitness app with workout tracking, nutrition logging, and progress analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>React / Next.js</li>
+                        <li><span class="skill-dot"></span>Vue.js / Nuxt</li>
+                        <li><span class="skill-dot"></span>HTML / CSS / JavaScript</li>
+                        <li><span class="skill-dot"></span>Tailwind CSS</li>
+                        <li><span class="skill-dot"></span>TypeScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Node.js / Express</li>
+                        <li><span class="skill-dot"></span>Python / Django</li>
+                        <li><span class="skill-dot"></span>PostgreSQL / MongoDB</li>
+                        <li><span class="skill-dot"></span>REST APIs</li>
+                        <li><span class="skill-dot"></span>GraphQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & DevOps</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Git / GitHub</li>
+                        <li><span class="skill-dot"></span>Docker</li>
+                        <li><span class="skill-dot"></span>AWS / Vercel</li>
+                        <li><span class="skill-dot"></span>CI/CD Pipelines</li>
+                        <li><span class="skill-dot"></span>Figma / Adobe XD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-subtitle">Have an exciting project? Let's talk about it!</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <span class="form-line"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <span class="form-line"></span>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" placeholder="Tell me about your project" rows="5" required></textarea>
+                    <span class="form-line"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alex Chen. All rights reserved.</p>
+            <p>Designed & Built with <span class="heart">❤</span> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
